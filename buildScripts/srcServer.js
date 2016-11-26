@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
-import config from '../webpack.config.dev';
+import config from './webpack.config.dev';
 const port = 3000;
 const app = express();
 const compiler = webpack(config);
@@ -13,7 +13,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../src/index.html'));
+  res.sendFile('src/index.html', {root: __dirname});
 });
 
 app.listen(port, (err) => {
