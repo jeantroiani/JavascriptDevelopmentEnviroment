@@ -3,9 +3,15 @@
   "version": "0.0.1",
   "description": "JavaScript development environment",
   "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "node buildScripts/srcServer.js",
+    "security-check": "node_modules/.bin/nsp check",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel open:src localtunnel"
   },
   "author": "Jean Troiani",
-  "license": "MIT",
+  "license": "MIT", 
   "dependencies": {
     "whatwg-fetch": "1.0.0"
   },
@@ -34,7 +40,7 @@
     "mocha": "3.1.2",
     "nock": "8.1.0",
     "npm-run-all": "3.1.1",
-    "nsp": "2.6.2",
+    "nsp": "^2.6.2",
     "numeral": "1.5.3",
     "open": "0.0.5",
     "rimraf": "2.5.4",
