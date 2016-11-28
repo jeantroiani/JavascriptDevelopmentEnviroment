@@ -75,6 +75,9 @@
     - Automate deployment to prod if all before pass
     #Names
         - Travis (Linux)
+            - sign in with Github
+            - add .travis.yml file to the root
+            - commit 
         - Appveyor (Windows)
         - Jenkins
     
