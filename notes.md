@@ -80,5 +80,28 @@
             - commit 
         - Appveyor (Windows)
         - Jenkins
-    
-
+#HTTP
+    -Node
+        names:
+            - HTTP
+            - Request
+    -Browser
+        names:
+            - XMLHttpRequest
+            - JQuery
+            - Fetch
+    -Node&Browser
+        names:
+            - isomorphic-fetch
+            - xhr
+            - Axios
+            - SuperAgent
+    -mock HTTP:
+        names: 
+            - nock (unit test)
+            - static JSON
+            -create development webserver
+                names:
+                    -api-mock
+                    -JSON server
+                    -JSON schema faker (fakes random data)
