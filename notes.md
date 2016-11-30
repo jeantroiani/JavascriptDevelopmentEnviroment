@@ -153,7 +153,28 @@
         - Raygun
     Condiditonal to run only on prod:
         By default html template on webpack is EJS
-        
+        Use EJS <%  tags to put a conditional if token exist
+#Production deployment
+    #Separate UI and API
+        - Cheap UI Hosting
+        - Serve UI via CDN
+        - Use the API tech you like
+        - Separate concerns
+        - low risk UI only deploys
+    #Cloud Hosting
+        names:
+            - Amazon web services
+            - Microsoft Azure
+            - Heroku
+            - Firebase
+            - Google Cloud Platform
+            - Pubstorm
+            - Github (only static files)
+    #Automated API deployment
+    Add to heroku
+        - type from repository $heroku create
+        - then $git push heroku master
+            
 
     
 
