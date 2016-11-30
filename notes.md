@@ -116,16 +116,33 @@
         - Consider organising by feature instead of file type.
         - Extract logic into POJOs.
 #Production Build
-- Minification
+# Minification
     Tackles speed load and saving bandwith.
     
-- Sourcemaps
-- Dynamic HTML
-- Cache busting
-- Bundle Splinting
-- Error Logging
-    #Dinamically generate HTML
+# Sourcemaps
+# Dynamic HTML
+    With webpack you can dinamically generate index.html and inject dependencies like <script src="bundle.js"></script>
     - import HtmlWebpackPlugin.
     - add the plugin.
-    with webpack you can dinamically generate index.html and inject dependencies like <script src="bundle.js"></script>
+# Cache busting
+    - save http request
+    - force request for lastest version
+    How:
+        - import the plugin webpackMd5Hash
+        - add it to the plugin list
+        - change the output file name to '[name].[chunkhash].js'
+    Do the same for CSS:
+        - Import the ExtractTextPlugin 
+        - Add the plugin 
+        - replace the loader: loader: ExtractTextPlugin.extract('css?sourceMap')}
+# Bundle Splinting
+    - Speed initial payload.
+    - Avoid re-downloading all libraries.
+    How:
+    -add on the entry point an object with key you wants.
+    - on plugins you can use webpack CommonChunkPlugins
+    - and change the output file name to '[name].js'
+# Error Logging
+    #Dinamically generate HTML
+    
 
