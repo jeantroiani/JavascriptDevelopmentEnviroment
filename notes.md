@@ -143,6 +143,14 @@
     - on plugins you can use webpack CommonChunkPlugins
     - and change the output file name to '[name].js'
 # Error Logging
-    #Dinamically generate HTML
+    names:
+        - track js
+            How:
+                - create account
+                - paste code in your html
+        - Sentry
+        - New relic
+        - Raygun
+
     
 
