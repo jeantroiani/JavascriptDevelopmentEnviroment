@@ -20,7 +20,6 @@
     0 Off
     1 Warning
     2 errors
-
 ##Testing and continuos integration
     #Testing Styles
         - Unit testing (single function or module)
