@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- BEGIN TRACKJS -->
-<script type="text/javascript">window._trackJs = { token: '9a94b0170fe34c8d9ff86c090bf6f86f' };</script>
-<script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
-<!-- END TRACKJS -->
+    <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+      <!-- BEGIN TRACKJS -->
+      <script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
+      <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+      <!-- END TRACKJS -->
+    <% } %>
   </head>
   <body>
     <h1>Hello World</h1>

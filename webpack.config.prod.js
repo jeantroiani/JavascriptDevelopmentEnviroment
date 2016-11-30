@@ -27,6 +27,7 @@ export default {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: true,
+      trackJSToken: 'tokenprovided',
       minify: {
         removeComments: true,
         collapseWhitespace: true,

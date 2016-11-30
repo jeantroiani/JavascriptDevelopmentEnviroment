@@ -151,6 +151,9 @@
         - Sentry
         - New relic
         - Raygun
+    Condiditonal to run only on prod:
+        By default html template on webpack is EJS
+        
 
     
 
