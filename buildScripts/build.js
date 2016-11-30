@@ -6,7 +6,7 @@ import chalk from 'chalk';
 process.env.NODE_ENV = 'production';
 console.log(chalk.blue('Generating minified bundle for production.'));
 
-webpack(webpackConfig).run( (err, stats) => {
+webpack(webpackConfig).run((err) => {
     if (err) {
         console.log(chalk.red(err));
         return 1;
