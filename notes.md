@@ -124,3 +124,8 @@
 - Cache busting
 - Bundle Splinting
 - Error Logging
+    #Dinamically generate HTML
+    - import HtmlWebpackPlugin.
+    - add the plugin.
+    with webpack you can dinamically generate index.html and inject dependencies like <script src="bundle.js"></script>
+
