@@ -104,3 +104,23 @@
                     -api-mock
                     -JSON server
                     -JSON schema faker (fakes random data)
+#Structure
+    #Demo App
+        - directory structure and file naming.
+        - Framework usage.
+        - Testing.
+        - Mock api.
+        - Automated deployment.
+    #Project Structure
+        - Put JS in .js file (no script tags).
+        - Consider organising by feature instead of file type.
+        - Extract logic into POJOs.
+#Production Build
+- Minification
+    Tackles speed load and saving bandwith.
+    
+- Sourcemaps
+- Dynamic HTML
+- Cache busting
+- Bundle Splinting
+- Error Logging
