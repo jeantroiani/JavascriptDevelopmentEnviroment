@@ -170,10 +170,19 @@
             - Google Cloud Platform
             - Pubstorm
             - Github (only static files)
+            - Surge (only static files)
     #Automated API deployment
     Add to heroku
         - type from repository $heroku create
         - then $git push heroku master
+    #Automated UI deployment
+        - npm start
+        - npm run build
+        - npm run deploy
+        how:
+            - open account on surge
+            
+
             
 
     
